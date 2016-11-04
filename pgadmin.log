@@ -1,0 +1,100 @@
+2016-08-01 22:56:11 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-08-01 23:05:55 ERROR  : ERROR:  column "body_suit_appearance_item_id" does not exist
+LINE 92: select body_suit_appearance_item_id, count(ca.character_id) ...
+                ^
+2016-08-01 23:06:55 ERROR  : ERROR:  canceling statement due to conflict with recovery
+DETAIL:  User query might have needed to see row versions that must be removed.
+2016-08-03 11:14:15 ERROR  : ERROR:  syntax error at or near "end"
+LINE 5:     , xp_required - 1 end as max_xp
+                              ^
+2016-08-03 12:38:41 ERROR  : ERROR:  aggregate function calls cannot contain window function calls
+LINE 1: ...level > 30 then 30 else c.level end as level, min(lag(xp_req...
+                                                             ^
+2016-08-19 17:38:13 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "dc_readonly"
+
+2016-08-23 13:52:55 ERROR  : ERROR:  permission denied for relation account_keys
+2016-08-23 13:53:03 ERROR  : ERROR:  permission denied for relation account_loot_locks
+2016-08-23 17:29:28 ERROR  : ERROR:  syntax error at or near "100"
+LINE 3: liomit 100
+               ^
+2016-08-23 17:31:38 ERROR  : ERROR:  syntax error at or near "ilik"
+LINE 3: where name_id ilik '%element%'
+                      ^
+2016-08-23 17:33:33 ERROR  : ERROR:  missing FROM-clause entry for table "i"
+LINE 3: where i.name_id not like '%UNUSED%' and i.name_id not like '...
+              ^
+2016-08-24 12:30:48 ERROR  : ERROR:  column "account_keys.station_id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select station_id, sum(case when key_type = 1 then count els...
+               ^
+2016-08-24 12:31:01 ERROR  : ERROR:  permission denied for relation account_keys
+2016-08-24 12:32:53 ERROR  : ERROR:  permission denied for relation account_keys
+2016-08-24 12:35:07 ERROR  : ERROR:  permission denied for relation account_loot_locks
+2016-08-24 17:07:46 ERROR  : ERROR:  permission denied for relation account_keys
+2016-08-30 13:02:04 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-08-30 13:02:25 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-08-30 13:07:11 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-08-30 13:07:54 ERROR  : ERROR:  canceling statement due to conflict with recovery
+DETAIL:  User query might have needed to see row versions that must be removed.
+2016-08-30 13:47:19 ERROR  : ERROR:  column "quantity" does not exist
+LINE 1: select appearance_item_id, sum(quantity) as occurrences, cou...
+                                       ^
+2016-08-30 13:48:07 ERROR  : ERROR:  column reference "character_id" is ambiguous
+LINE 2:   , count(character_id) as char_count
+                  ^
+2016-08-30 13:49:54 ERROR  : ERROR:  canceling statement due to conflict with recovery
+DETAIL:  User query might have needed to see row versions that must be removed.
+2016-08-31 10:40:41 ERROR  : ERROR:  missing FROM-clause entry for table "a"
+LINE 2:   , count(a.character_id) as char_count
+                  ^
+2016-08-31 11:05:46 ERROR  : ERROR:  column "item_id" does not exist
+LINE 6: where pc.last_saved >= current_date - 30 and item_id in (298...
+                                                     ^
+2016-08-31 11:07:04 ERROR  : ERROR:  column "item_id" does not exist
+LINE 6: where pc.last_saved >= current_date - 30 and item_id in (298...
+                                                     ^
+2016-08-31 11:07:16 ERROR  : ERROR:  column "appearance_item_id" does not exist
+LINE 6: where pc.last_saved >= current_date - 30 and appearance_item...
+                                                     ^
+2016-08-31 12:50:33 ERROR  : ERROR:  column "name" does not exist
+LINE 1: select id, name from designer_public.appearance_items where ...
+                   ^
+2016-09-07 23:56:40 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-09-08 00:28:21 ERROR  : ERROR:  syntax error at or near ","
+LINE 1: select, character_id, world_id, collection_id, encode(collec...
+              ^
+2016-09-08 00:28:42 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-09-08 00:51:51 ERROR  : ERROR:  function convert(text, unknown, unknown) does not exist
+LINE 2:   , encode(collection_status, 'base64'), convert(encode(coll...
+                                                 ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2016-09-16 12:31:36 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-09-20 15:58:05 ERROR  : ERROR:  column reference "character_id" is ambiguous
+LINE 1: select station_id, character_id, pc.combat_rating as cr, fea...
+                           ^
+2016-09-21 18:18:20 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-09-22 16:27:48 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-09-22 17:26:01 ERROR  : ERROR:  relation "designer_public.trait_definition" does not exist
+LINE 2:   from only designer_public.trait_definition td
+                    ^
+2016-09-23 11:32:29 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-09-26 16:33:54 ERROR  : ERROR:  syntax error at or near "andcf"
+LINE 4: ...= pc.world_id and cf.database_id = pc.database_id andcf..cha...
+                                                             ^
+2016-09-26 16:34:06 ERROR  : ERROR:  syntax error at or near ".."
+LINE 4: ...orld_id and cf.database_id = pc.database_id and cf..characte...
+                                                             ^
+2016-09-26 16:34:27 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-09-26 16:35:49 ERROR  : ERROR:  canceling statement due to conflict with recovery
+DETAIL:  User query might have needed to see row versions that must be removed.
+2016-09-28 12:21:35 ERROR  : could not receive data from server: Software caused connection abort (0x00002745/10053)
+2016-09-28 12:22:33 ERROR  : ERROR:  canceling statement due to statement timeout
+2016-10-07 11:01:43 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-10-20 12:08:33 ERROR  : ERROR:  canceling statement due to statement timeout
